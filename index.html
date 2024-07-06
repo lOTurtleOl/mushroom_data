@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushroom Data</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+
+    <table id="shrooms" class="table table-success">
+        <thead>
+            <tr>
+                <th scope="col" class="text-center align-middle">Mushrooms</th>
+                <th scope="col" class="text-center align-middle">Species</th>
+                <th scope="col" class="text-center align-middle">Origin</th>
+                <th scope="col" class="text-center align-middle">Use</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-success">
+                <th scope="row" id="thead" class="text-center">1</th>
+                <td class="text-center align-middle">Shiitake</td>
+                <td class="text-center align-middle">East Asia</td>
+                <td class="text-center align-middle">Medicinal</td>
+            </tr>
+            <tr class="table-warning">
+                <th scope="row" id="thead" class="text-center">2</th>
+                <td class="text-center align-middle">King Trumpet</td>
+                <td class="text-center align-middle">Mediterranean Europe, Middle East, and North Africa</td>
+                <td class="text-center align-middle">Culinary, Medicinal</td>
+            </tr>
+            <tr class="table-danger">
+                <th scope="row" id="thead" class="text-center">3</th>
+                <td class="text-center align-middle">Death Cap</td>
+                <td class="text-center align-middle">Europe</td>
+                <td class="text-center align-middle">Toxic</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <div class="container mt-5 border border-success">
+        <h2 class="text-center mt-3 text-success">Enter a new mushroom</h2>
+        <form>
+            <div class="mb-3">
+                <label for="species" class="form-label mt-3">Species</label>
+                <input type="text" class="form-control" id="species" aria-describedby="species">
+            </div>
+            <div class="mb-3">
+                <label for="origin" class="form-label">Origin</label>
+                <input type="text" class="form-control" id="origin">
+            </div>
+            <div class="mb-3 form-checks d-flex justify-content-center">
+                <input type="checkbox" class="form-check-input" id="culinary">
+                <label class="form-check-label me-auto" for="culinary">Culinary</label>
+                <input type="checkbox" class="form-check-input" id="medicinal">
+                <label class="form-check-label me-auto" for="medicinal">Medicinal</label>
+                <input type="checkbox" class="form-check-input" id="toxic">
+                <label class="form-check-label" for="toxic">Toxic</label>
+            </div>
+            <button id="add" class="btn btn-success mb-3">Submit</button>
+        </form>
+    </div>
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
