@@ -1,0 +1,38 @@
+body {
+    background-image: url(images/shroom_background.jpg);
+}
+
+.container {
+    background-color: rgba(232, 237, 217, 0.3);
+    /* White with 80% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.enter {
+    color: #f9d7da
+}
+
+.form-label,
+.form-check-label {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.header-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+
